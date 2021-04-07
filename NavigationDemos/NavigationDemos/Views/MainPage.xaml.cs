@@ -11,9 +11,9 @@ namespace NavigationDemos.Views
             this.InitializeComponent();
         }
 
-        private void Button_OnClicked(object sender, EventArgs e)
+        private async void Button_OnClicked(object sender, EventArgs e)
         {
-            this.Navigation.PushAsync(new DetailPage());
+            await this.Navigation.PushAsync(new DetailPage());
         }
     }
 }
