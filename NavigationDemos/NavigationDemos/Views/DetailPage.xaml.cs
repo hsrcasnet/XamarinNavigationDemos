@@ -12,7 +12,7 @@ namespace NavigationDemos.Views
 
         private async void Button_OnClicked(object sender, EventArgs e)
         {
-             await this.Navigation.PopAsync();
+            await this.Navigation.PopAsync();
         }
     }
 }
