@@ -12,7 +12,7 @@ namespace NavigationDemos.Views
 
         private async void Button_OnClicked(object sender, EventArgs e)
         {
-            await this.Navigation.PushAsync(new DetailPage());
+            await this.Navigation.PushAsync(new DetailPage(), animated: true);
         }
     }
 }
