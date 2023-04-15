@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-    x:Class="NavigationDemos.Views.MainPage"
+    x:Class="NavigationDemos.Views.DetailPage1"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="MainPage">
-
+    Title="DetailPage1">
     <StackLayout>
+        <Entry Placeholder="Enter Text here" />
         <Button
-            Clicked="Button_OnClicked"
-            Text="Navigate to DetailPage1"
+            Clicked="Button_Clicked"
+            Text="Navigate to DetailPage2"
             HorizontalOptions="Center"
             VerticalOptions="CenterAndExpand" />
     </StackLayout>

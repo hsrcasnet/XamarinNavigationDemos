@@ -4,27 +4,27 @@ using Xamarin.Forms;
 
 namespace NavigationDemos.Views
 {
-    public partial class MainPage : ContentPage
+    public partial class DetailPage2 : ContentPage
     {
-        public MainPage()
+        public DetailPage2()
         {
             this.InitializeComponent();
         }
 
         private async void Button_OnClicked(object sender, EventArgs e)
         {
-            await this.Navigation.PushAsync(new DetailPage1(), animated: true);
+            await this.Navigation.PopAsync();
         }
 
         protected override void OnAppearing()
         {
-            Debug.WriteLine("MainPage: OnAppearing");
+            Debug.WriteLine("DetailPage2: OnAppearing");
             base.OnAppearing();
         }
 
         protected override void OnDisappearing()
         {
-            Debug.WriteLine("MainPage: OnDisappearing");
+            Debug.WriteLine("DetailPage2: OnDisappearing");
             base.OnDisappearing();
         }
     }

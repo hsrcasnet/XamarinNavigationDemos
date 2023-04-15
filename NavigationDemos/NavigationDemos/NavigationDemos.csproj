@@ -13,4 +13,19 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2578" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\DetailPage2.xaml.cs">
+      <DependentUpon>DetailPage2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\DetailPage1.xaml.cs">
+      <DependentUpon>DetailPage1.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\DetailPage1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
 </Project>
